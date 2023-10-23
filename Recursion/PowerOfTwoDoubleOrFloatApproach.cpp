@@ -1,20 +1,20 @@
 #include <iostream>
 using namespace std;
 
-bool isPowerOfTwo(int n) {
-        float x= n;
-        if ((x==2 || x==1) && x<=2){
+bool isPowerOfTwo(double n) {
+        
+        if ((n==2 || n==1) && n<=2){
             return true;
-        }else if (x!=2 && x<=2){
+        }else if (n!=2 && n<=2){
             return false;
             
             
         }else{
-            cout<<x<<endl;
-            return(isPowerOfTwo(float (x/2)));
+            cout<<n<<endl;
+            return(isPowerOfTwo(n/2));
         }
 }
 
 int main(){
-    cout<<isPowerOfTwo(10);
+    cout<<isPowerOfTwo(1);
 }
